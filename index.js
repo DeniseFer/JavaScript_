@@ -1,14 +1,21 @@
-function ConvCelsius (temp_usuario) {
-    if (temp_usuario == 1){
-        conv = prompt("Digite a temperatura em Farenheit:\n")
-        celsius = (conv  - 32) * 5/9
-        return "A temperatura em celsius equivale a " + celsius +"Cº"
-    } else if (temp_usuario == 2){
-        conv = prompt("Digite a temperatura em Kelvin:\n")
-        celsius =  conv - 273,15
-        return "A temperatura em celsius equivale a " + celsius+"Cº"
-    }
-}
-console.log("=======CONVERTOR DE TEMPERATURA PARA CELSIUS=======\n")
-let temperatura = prompt("Digite qual Unidade de Temperatura que deseja converter:\n 1 - Farenheit\n 2 - Kelvin")
-console.log(ConvCelsius (temperatura))
+function oi() {
+    return "Oi, "
+   }
+   
+   function cumprimentar(mensagem,nome) {
+    console.log(mensagem()+nome)}
+    
+   cumprimentar(oi,"Zé");
+   
+   
+   
+   function fatorial(n) {
+    if(n<=2) return 1//condição de retorno
+    return n*fatorial(n-1)}
+    fatorial(5)
+    
+    function loop(x) {
+    if (x >= 10) return; 
+    loop(x + 1); 
+   }
+   loop(9)
